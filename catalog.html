@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Моноподы для селфи</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,7 +14,7 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
-              <input class="header-search-input" type="text" name="search-input" placeholder="Поиск по сайту">
+              <input class="header-search-input" type="text" name="search-input" value="Текст поиска" placeholder="Поиск по сайту">
               <button type="submit" class="button search-button">Найти</button>
             </form>
           </li>
@@ -30,7 +31,7 @@
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-advantages">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров
               <span class="navigation-link-icon">+</span>
@@ -97,7 +98,7 @@
             <input class="control-input" type="radio" name="bluetooth-option" >Нет
           </label>
         </fieldset>
-        <button class="button" type="submit">Показать</button>
+        <button class="control-button" type="submit">Показать</button>
       </form>
       <header class="catalog-header">
         <h3 class="catalog-sort">Сортировка:</h3>
@@ -113,6 +114,7 @@
           <span class="visually-hidden">Сортировка по убыванию </span>
         </a>
       </header>
+      <div class="catalog-container">
       <ul class="product-list">
         <li class="product-card">
           <a class="product-card-link" href="product.html">
@@ -154,7 +156,7 @@
       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+          <a class="pagination-link pagination-navigation disabled">Назад</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-current">1</a>
@@ -172,9 +174,10 @@
           <a class="pagination-link" href="#">15</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link pagination-next">Вперёд</a>
+          <a class="pagination-link pagination-navigation" href="#">Вперёд</a>
         </li>
       </ul>
+    </div>
      </section>
   </main>
   <footer class="page-footer">
