@@ -31,11 +31,23 @@ body {
   background-color: #FFFFFF;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* Pages */
@@ -48,6 +60,7 @@ body {
 .header-search-input {
   font-size: 16px;
   line-height: 20px;
+  background: transparent;
 }
 
 .search-button {
@@ -56,10 +69,10 @@ body {
   text-transform: none;
   font-size: 16px;
   line-height: 20px;
+  background: transparent;
 }
 
 .navigation-user a {
-  line-height: 30px;
   text-decoration: none;
   color: #000000;
 }
@@ -116,7 +129,6 @@ font-size: 180px;
 .categories {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 18px;
   line-height: 24px;
 }
 
@@ -195,11 +207,6 @@ font-size: 180px;
 }
 
 .button-about-us {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  text-decoration: none;
-  text-transform: uppercase;
   color: #000000;
   letter-spacing: 2px;
 }
@@ -221,7 +228,6 @@ font-size: 180px;
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
 }
 
 .contacts-address-text {
@@ -237,11 +243,6 @@ font-size: 180px;
 }
 
 .button-contact-us {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
-  text-decoration: none;
-  text-transform: uppercase;
   color: #000000;
   letter-spacing: 2px;
 }
@@ -251,7 +252,6 @@ font-size: 180px;
 .newsletter {
   background-color: #F0F0F0;
 }
-
 
 .newsletter-title {
   font-family: "Raleway", sans-serif;
@@ -352,11 +352,7 @@ font-size: 180px;
 }
 
 .control-button {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
+  font-size: inherit;
   letter-spacing: 2px;
 }
 
@@ -379,7 +375,7 @@ font-size: 180px;
 .product-card-title {
   font-weight: 700;
   line-height: 20px;
-  font-size: 18px;
+  font-size: inherit;
   color: #000000;
   letter-spacing: -0.2px;
 }
