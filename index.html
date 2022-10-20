@@ -54,7 +54,7 @@
     <h1 class="visually-hidden">Главная страница интернет-магазина «Девайс»</h1>
     <section class="slider">
       <h2 class="visually-hidden">Слайдер с товарами</h2>
-      <button type="button" class="button slider-previous-button">previous</button>
+      <button type="button" class="button slider-previous-button visually-hidden">previous</button>
       <ul class="product-slider-list">
         <li class="product-item active">
           <div class="product-foto">
@@ -62,16 +62,20 @@
           </div>
           <div class="product-description">
             <span class="product-item-number">01</span>
-            <p class="product-title title">Порхает как бабочка,жалит как пчела!</p>
+            <p class="product-title title">Порхает как бабочка, жалит как пчела!</p>
             <p class="product-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.</p>
             <a class="product-link" href="#">Подробнее</a>
-            <dl class="product-benefits">
-              <dt>800 м</dt>
-              <dd>Дальность полета</dd>
-              <dt>50 м</dt>
-              <dd>Радиус поражения</dd>
-            </dl>
+            <ul class="product-benefits-list">
+              <li class="product-benefits-item">
+                <span class="product-benefit">800 м</span>
+                <span class="product-benefit-description">Дальность полета</span>
+              </li>
+              <li class="product-benefits-item">
+                <span class="product-benefit">50 м</span>
+                <span class="product-benefit-description">Радиус поражения</span>
+              </li>
+            </ul>
           </div>
         </li>
         <li class="product-item visually-hidden">
@@ -84,10 +88,12 @@
             <p class="product-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
               соблюдать диету.</p>
             <a class="product-link" href="#">Подробнее</a>
-            <dl class="product-benefits">
-              <dt>48 часов</dt>
-              <dd>Без подзарядки</dd>
-            </dl>
+            <ul class="product-benefits-list">
+              <li class="product-benefits-item">
+                <span class="product-benefit">48 часов</span>
+                <span class="product-benefit-description">Без подзарядки</span>
+              </li>
+            </ul>
           </div>
         </li>
         <li class="product-item visually-hidden">
@@ -100,18 +106,24 @@
             <p class="product-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!)
               метров длиной и весом всего 5 кг.</p>
             <a class="product-link" href="#">Подробнее</a>
-            <dl class="product-benefits">
-              <dt>8,5 м</dt>
-              <dd>Длина палки</dd>
-              <dt>5 кг</dt>
-              <dd>Вес палки</dd>
-              <dt>Карбон</dt>
-              <dd>Материал</dd>
-            </dl>
+            <ul class="product-benefits-list">
+              <li class="product-benefits-item">
+                <span class="product-benefit">8,5 м</span>
+                <span class="product-benefit-description">Длина палки</span>
+              </li>
+              <li class="product-benefits-item">
+                <span class="product-benefit">5 кг</span>
+                <span class="product-benefit-description">Вес палки</span>
+              </li>
+              <li class="product-benefits-item">
+                <span class="product-benefit">Карбон</span>
+                <span class="product-benefit-description">Материал</span>
+              </li>
+            </ul>
           </div>
         </li>
       </ul>
-      <button type="button" class="button slider-next-button">next</button>
+      <button type="button" class="button slider-next-button visually-hidden">next</button>
       <ul class="slider-pagination-list">
         <li class="slider-pagination-item">
           <input type="radio" name="slider-dot" checked>
@@ -182,18 +194,18 @@
         </li>
       </ul>
       <ul class="advantages-description-list">
-        <li class="advantages-description-item advantages-active">
+        <li class="advantages-description-item delivery-image advantages-active">
           <p class="advantages-title-item title">Доставка</p>
           <p class="advantages-text-item">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
-        <li class="advantages-description-item visually-hidden">
+        <li class="advantages-description-item guarantee-image visually-hidden">
           <p class="advantages-title-item title">Гарантия</p>
           <p class="advantages-text-item">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
             переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </li>
-        <li class="advantages-description-item visually-hidden">
-          <p class="advantages-title-item title">Кредит</p>
+        <li class="advantages-description-item loan-image visually-hidden">
+          <p class="advantages-title-item loan title">Кредит</p>
           <p class="advantages-text-item">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
             наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </li>
@@ -250,8 +262,8 @@
   <section class="newsletter">
     <div class="newsletter-container container">
       <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
-      <p class="newsletter-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-        распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+      <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
+        распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
         <input class="newsletter-input-email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
         <button class="newsletter-submit-button" type="submit">Подписаться</button>
@@ -261,7 +273,7 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="container">
+  <div class="page-footer-container container">
     <a class="footer-logo-link" href="index.html">
       <img class="footer-logo logo-yellow" src="images/logo-yellow.svg" width="145" height="36"
            alt="Логотип магазина Device">
@@ -287,17 +299,17 @@
       <span class="temporary-container"></span>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a class="button footer-twitter-telegram" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="button footer-twitter-youtube" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://twitter.com/htmlacademy_ru">
+          <a class="button footer-twitter-icon" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>

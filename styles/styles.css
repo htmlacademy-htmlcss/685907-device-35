@@ -100,7 +100,6 @@ body {
 
 .search-form {
   display: block;
-  width: 517px;
 }
 
 .navigation-list {
@@ -113,7 +112,7 @@ body {
 
 .navigation-login {
   display: block;
-  width: 230px;
+  padding-right: 150px;
 }
 
 .header-search-input {
@@ -131,9 +130,22 @@ body {
   background: transparent;
 }
 
+.navigation-user {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .navigation-user a {
   text-decoration: none;
   color: #000000;
+}
+
+.navigation-user li:first-child {
+  width: 50%;
+}
+
+.navigation-advantages li:first-child {
+  width: 50%;
 }
 
 .navigation-advantages {
@@ -158,19 +170,13 @@ body {
 /* Slider */
 
 .slider {
-  position: relative;
+  margin-top: -140px;
 }
 
 .slider-previous-button {
-  position: absolute;
-  left: 0;
-  top: 211px;
 }
 
 .slider-next-button {
-  position: absolute;
-  right: 560px;
-  top: 211px;
 }
 
 .product-item {
@@ -179,14 +185,17 @@ body {
 }
 
 .slider-pagination-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 .product-description {
   min-width: 560px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .product-slider-list {
@@ -197,13 +206,23 @@ body {
 .product-item-number {
   font-weight: 700;
   font-size: 180px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  display: block;
+  margin-left: 300px;
+  color: #FFFFFF;
+  margin-bottom: -65px;
+  margin-top: 75px;
+  height: 100px;
+}
+
+.product-title {
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .product-text {
   color: #444444;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .product-link {
@@ -214,15 +233,33 @@ body {
   text-transform: uppercase;
   color: #000000;
   letter-spacing: 2px;
+  display: block;
+  margin-bottom: 50px;
 }
 
-.product-benefits dt {
+.product-benefits-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.product-benefits-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 26px;
+}
+
+.product-benefit {
   font-size: 36px;
+  margin-bottom: 12px;
 }
 
-.product-benefits dd {
+.product-benefit-description {
   font-size: 16px;
-  color: #444444;
 }
 
 /* Categories */
@@ -240,6 +277,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .categories-item {
@@ -254,6 +292,7 @@ body {
 
 .categories-item-link img {
   background-color: #FFE17F;
+  margin-bottom: 32px;
 }
 
 /* Advantages */
@@ -264,17 +303,25 @@ body {
 
 .advantages-container {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .advantages-list {
   margin: 0;
   padding: 0;
+  margin-bottom: 64px;
+  margin-top: 64px;
   list-style-type: none;
   width: 290px;
 }
 
 .advantages-item {
   margin-right: 120px;
+  margin-bottom: 35px;
+}
+
+.advantages-item:last-child {
+  margin-bottom: 0;
 }
 
 .advantages-description-list {
@@ -284,9 +331,10 @@ body {
 }
 
 .advantages-description-item {
-  padding-right: 300px;
+  padding-right: 550px;
   padding-left: 116px;
-  flex-grow: 1;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
 .advantages-item-link {
@@ -301,9 +349,39 @@ body {
   border: none;
 }
 
+.advantages-title-item {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
 .advantages-text-item {
   color: #444444;
   width: 500px;
+}
+
+.delivery-image {
+  background-image: url("../images/delivery-image.svg");
+  width: 136px;
+  height: 164px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.guarantee-image {
+  background-image: url("../images/guarantee-image.svg");
+  width: 171px;
+  height: 195px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.loan-image {
+  background-image: url("../images/loan-image.svg");
+  width: 156px;
+  height: 188px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /* Order */
@@ -319,6 +397,8 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .order-button {
@@ -336,12 +416,18 @@ body {
   margin: 0;
   width: 125px;
   height: 100px;
+  background-image: url("../images/order-car-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .order-about {
   margin: 0;
   width: 125px;
   height: 100px;
+  background-image: url("../images/order_info.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* About us */
@@ -355,13 +441,39 @@ body {
   width: 530px;
 }
 
+.about-us-title {
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
 .about-us p {
   color: #444444;
+}
+
+.about-us-description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-us-delivery {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.delivery-list {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .delivery-item {
   font-weight: 700;
   line-height: 20px;
+  margin-bottom: 19px;
+}
+
+.delivery-list li:last-child {
+  margin-bottom: 0;
 }
 
 .button-about-us {
@@ -376,6 +488,10 @@ body {
   width: 530px;
 }
 
+.contacts-container {
+  margin-bottom: 70px;
+}
+
 .contacts-title {
   color: #000000;
 }
@@ -383,18 +499,36 @@ body {
 .contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-description {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .contacts-address-text {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
 .contacts-phone {
   color: inherit;
   font-style: normal;
-  text-decoration-line: none;
+  text-decoration-line: underline;
+  display: block;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-schedule {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 77px;
 }
 
 .button-contact-us {
@@ -416,11 +550,17 @@ body {
 
 .newsletter-title {
   width: 530px;
+  margin: 0;
+  margin-top: 64px;
+  margin-bottom: 144px;
 }
 
 .newsletter-description {
   color: #444444;
   width: 530px;
+  margin: 0;
+  margin-top: 74px;
+  margin-bottom: 144px;
 }
 
 .newsletter-title {
@@ -433,6 +573,8 @@ body {
 
 .newsletter-form {
   width: 810px;
+  margin: 0;
+  margin-bottom: 56px;
 }
 
 .newsletter-submit-button {
@@ -445,6 +587,8 @@ body {
 
 .newsletter-advantages {
   color: #444444;
+  margin: 0;
+  margin-bottom: 56px;
 }
 
 /* Page footer */
@@ -454,14 +598,28 @@ body {
   color: #F0F0F0;
 }
 
+.page-footer-container {
+  margin-bottom: 65px;
+}
+
+.footer-logo-link {
+  display: block;
+  margin-top: 62px;
+  margin-bottom: 35px;
+}
+
 .footer-first-container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 64px;
 }
 
 .footer-second-container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 65px;
 }
 
 .temporary-container {
@@ -478,9 +636,12 @@ body {
 .footer-advantages-list {
   width: 400px;
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .footer-advantages-link {
@@ -498,7 +659,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  text-decoration-line: none;
+  display: block;
 }
 
 .footer-social-list {
@@ -507,21 +668,58 @@ body {
   list-style-type: none;
 }
 
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.footer-social-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
 /* Header-inner */
 .inner-header {
   padding-bottom: 36px;
 }
 
+.inner-header-container {
+  background-color: #FFFFFF;
+}
+
+.inner-header-title {
+  margin: 0;
+  padding-top: 35px;
+  margin-bottom: 15px;
+  margin-left: 60px;
+}
+
 /* Main-inner */
- .main-inner {
-   background-color: #F0F0F0;
- }
+.main-inner {
+  background-color: #F0F0F0;
+}
 
 /* Breadcrumbs */
 
 .breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   color: #242424;
+  display: flex;
+  margin-left: 60px;
 }
+
+.breadcrumbs-item {
+  margin-right: 36px;
+}
+
+.breadcrumbs-list li:last-child {
+  margin-right: 0;
+}
+
 
 .breadcrumbs-link {
   color: inherit;
@@ -537,9 +735,9 @@ body {
 }
 
 .catalog-filter {
-  width: 320px;
-  margin-right: 60px;
-  margin-left: 60px;
+  width: 200px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 .catalog-right-column {
@@ -548,6 +746,7 @@ body {
 
 .catalog-container {
   background-color: #FFFFFF;
+  padding: 70px 40px;
 }
 
 .catalog-filter-title {
@@ -557,6 +756,9 @@ body {
   line-height: 19px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 60px;
 }
 
 .catalog-sort {
@@ -566,6 +768,11 @@ body {
   line-height: 19px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin: 0;
+}
+
+.catalog-filter-group {
+  margin-bottom: 35px;
 }
 
 .control-button {
@@ -583,19 +790,57 @@ body {
   line-height: 20px;
 }
 
+/*Catalog header*/
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.catalog-sort-container {
+  display: flex;
+  width: 60px;
+  height: 30px;
+}
+
+.button-ascending {
+  background-image: url("../images/arrow-up-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+}
+
+.button-descending {
+  background-image: url("../images/arrow-down-fill.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+}
+
 /* Product card */
 
 .product-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
+.product-card {
+  margin-bottom: 44px;
+}
+
 .product-card-link {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-title {
@@ -623,14 +868,45 @@ body {
 
 /* Pagination */
 
-.pagination {
+.pagination-container {
   background-color: #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 760px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.pagination-item {
+  padding: 10px 15px;
+}
+
+.pagination-navigation-back {
+  padding: 25px;
+}
+
+.pagination-navigation-forward {
+  padding: 25px;
 }
 
 .pagination-show-more {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2px;
+  width: 760px;
+  height: 55px;
+  background: transparent;
+  margin-bottom: 44px;
 }
 
 .pagination-link {
