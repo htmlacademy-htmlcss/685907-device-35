@@ -194,7 +194,7 @@
         </li>
       </ul>
       <ul class="advantages-description-list">
-        <li class="advantages-description-item delivery-image advantages-active">
+        <li class="advantages-description-item delivery-image">
           <p class="advantages-title-item title">Доставка</p>
           <p class="advantages-text-item">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
             бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -261,14 +261,16 @@
   </div>
   <section class="newsletter">
     <div class="newsletter-container container">
-      <h2 class="newsletter-title title">Подпишитесь на рассылку</h2>
+      <h2 class="newsletter-title title">Подпишитесь<br> на рассылку</h2>
       <p class="newsletter-description">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами,
         распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="newsletter-input-email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-        <button class="newsletter-submit-button" type="submit">Подписаться</button>
+        <div class="form-container">
+          <input class="newsletter-input-email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+          <button class="newsletter-submit-button" type="submit">Подписаться</button>
+        </div>
+        <p class="newsletter-advantages">Это бесплатно</p>
       </form>
-      <p class="newsletter-advantages">Это бесплатно</p>
     </div>
   </section>
 </main>
@@ -276,48 +278,44 @@
   <div class="page-footer-container container">
     <a class="footer-logo-link" href="index.html">
       <img class="footer-logo logo-yellow" src="images/logo-yellow.svg" width="145" height="36"
-           alt="Логотип магазина Device">
+           alt="Логотип магазина Device.">
     </a>
-    <div class="footer-first-container">
-      <address class="footer-address">
-        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <ul class="footer-advantages-list">
-        <li class="footer-advantages-item">
-          <a class="footer-advantages-link" href="/index.html#advantages">Доставка</a>
-        </li>
-        <li class="footer-advantages-item">
-          <a class="footer-advantages-link" href="/index.html#advantages">Гарантия</a>
-        </li>
-        <li class="footer-advantages-item">
-          <a class="footer-advantages-link" href="/index.html#contacts">Контакты</a>
-        </li>
-      </ul>
-      <a class="footer-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
-    </div>
-    <div class="footer-second-container">
-      <span class="temporary-container"></span>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-          <a class="button footer-twitter-telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button footer-twitter-youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button footer-twitter-icon" href="https://twitter.com/htmlacademy_ru">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-        </li>
-      </ul>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img src="images/htmlacademy-icon.svg" width="115" height="33" alt="ссылка на htmlacademy">
-      </a>
-    </div>
+    <address class="footer-address">
+      <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    </address>
+    <ul class="footer-advantages-list">
+      <li class="footer-advantages-item">
+        <a class="footer-advantages-link" href="/index.html#advantages">Доставка</a>
+      </li>
+      <li class="footer-advantages-item">
+        <a class="footer-advantages-link" href="/index.html#advantages">Гарантия</a>
+      </li>
+      <li class="footer-advantages-item">
+        <a class="footer-advantages-link" href="/index.html#contacts">Контакты</a>
+      </li>
+    </ul>
+    <a class="footer-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+    <span class="temporary-container"></span>
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a class="button footer-twitter-telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграмм</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button footer-twitter-youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a class="button footer-twitter-icon" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">Твиттер</span>
+        </a>
+      </li>
+    </ul>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img src="images/htmlacademy-icon.svg" width="115" height="33" alt="ссылка на htmlacademy">
+    </a>
   </div>
 </footer>
 </body>
