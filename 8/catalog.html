@@ -17,9 +17,9 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <form class="search-form" action="http://echo.htmlacademy.ru" method="get">
-            <input class="header-search-input" type="text" name="search-input" value="Текст поиска"
-                   placeholder="Поиск по сайту">
-            <button type="submit" class="button search-button">Найти</button>
+            <input class="header-search-input" type="text" name="search-text" placeholder="Поиск по сайту"
+                   value="Текст поиска">
+            <button type="submit" class="search-button">Найти</button>
           </form>
         </li>
         <li class="navigation-item">
@@ -130,14 +130,14 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
           <div class="catalog-sort-container">
-            <a href="#" class="button button-ascending sort">
+            <a href="#" class="button-ascending sort">
               <svg class="sort-svg" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10"
                    fill="none" opacity=".2" xmlns="http://www.w3.org/2000/svg">
                 <path d="m6 0 5.5 10H.5" fill="#000"/>
               </svg>
               <span class="visually-hidden">Сортировка по возрастанию</span>
             </a>
-            <a href="#" class="button button-descending sort">
+            <a href="#" class="button-descending sort">
               <svg class="sort-svg" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10"
                    fill="none" opacity=".2" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 10 .5 0h11" fill="#000"/>
@@ -150,50 +150,56 @@
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">
-                <img class="product-card-image" src="images/products/product-1.jpg" width="360" height="380"
-                     alt="Любительская селфи-палка.">
-                <h3 class="product-card-title">Любительская селфи-палка</h3>
-                <span class="product-card-price">500 ₽</span>
+                <div class="product-card-container">
+                  <img class="product-card-image" src="images/products/product-1.jpg" width="360" height="380"
+                       alt="Любительская селфи-палка.">
+                  <div class="product-new active">NEW</div>
+                  <h3 class="product-card-title">Любительская селфи-палка</h3>
+                  <span class="product-card-price">500 ₽</span>
+                </div>
+                <span class="product-more-link button" href="#">Подробнее</span>
               </a>
-              <div class="product-new active">NEW</div>
-              <a class="product-more-link button" href="#">Подробнее</a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/product-2.jpg" width="360" height="380"
-                     alt="Профессиональная селфи-палка.">
-                <div class="product-new visually-hidden">NEW</div>
-                <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                <span class="product-card-price">1500 ₽</span>
+                <div class="product-card-container">
+                  <img class="product-card-image" src="images/products/product-2.jpg" width="360" height="380"
+                       alt="Профессиональная селфи-палка.">
+                  <div class="product-new visually-hidden">NEW</div>
+                  <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                  <span class="product-card-price">1500 ₽</span>
+                </div>
+                <span class="product-more-link button" href="#">Подробнее</span>
               </a>
-              <a class="product-more-link button" href="#">Подробнее</a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/product-3.jpg" width="360" height="380"
-                     alt="Непотопляемая селфи-палка.">
-                <div class="product-new visually-hidden">NEW</div>
-                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                <span class="product-card-price">2500 ₽</span>
+                <div class="product-card-container">
+                  <img class="product-card-image" src="images/products/product-3.jpg" width="360" height="380"
+                       alt="Непотопляемая селфи-палка.">
+                  <div class="product-new visually-hidden">NEW</div>
+                  <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                  <span class="product-card-price">2500 ₽</span>
+                </div>
+                <span class="product-more-link button" href="#">Подробнее</span>
               </a>
-              <a class="product-more-link button" href="#">Подробнее</a>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="images/products/product-4.jpg" width="360" height="380"
-                     alt="Селфи-палка «Следуй за мной».">
-                <div class="product-new visually-hidden">NEW</div>
-                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-                <span class="product-card-price">1500 ₽</span>
+                <div class="product-card-container">
+                  <img class="product-card-image" src="images/products/product-4.jpg" width="360" height="380"
+                       alt="Селфи-палка «Следуй за мной».">
+                  <div class="product-new visually-hidden">NEW</div>
+                  <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                  <span class="product-card-price">1500 ₽</span>
+                </div>
+                <span class="product-more-link button" href="#">Подробнее</span>
               </a>
-              <a class="product-more-link button" href="#">Подробнее</a>
             </li>
           </ul>
-          <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+          <button class="pagination-show-more" type="button">Загрузить ещё</button>
           <div class="pagination-container">
-          <span class="pagination-navigation-back pagination-control">
             <a class="pagination-link pagination-navigation disabled">Назад</a>
-          </span>
             <ul class="pagination-list">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
@@ -211,9 +217,7 @@
                 <a class="pagination-link" href="#">15</a>
               </li>
             </ul>
-            <span class="pagination-navigation-forward pagination-control">
             <a class="pagination-link pagination-navigation" href="#">Вперёд</a>
-          </span>
           </div>
         </div>
       </div>
@@ -231,21 +235,21 @@
     </address>
     <ul class="footer-advantages-list">
       <li class="footer-advantages-item">
-        <a class="footer-advantages-link" href="index.html#advantages">Доставка</a>
+        <a class="footer-advantages-link" href="#advantages">Доставка</a>
       </li>
       <li class="footer-advantages-item">
-        <a class="footer-advantages-link" href="index.html#advantages">Гарантия</a>
+        <a class="footer-advantages-link" href="#advantages">Гарантия</a>
       </li>
       <li class="footer-advantages-item">
-        <a class="footer-advantages-link" href="index.html#contacts">Контакты</a>
+        <a class="footer-advantages-link" href="#contacts">Контакты</a>
       </li>
     </ul>
     <a class="footer-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
-    <span class="temporary-container"></span>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button footer-telegram-icon" href="https://t.me/htmlacademy">
-          <svg class="telegram-icon" aria-hidden="true" focusable="false" width="14" height="12" viewBox="0 0 14 12"
+        <a class="footer-telegram-icon" href="https://t.me/htmlacademy">
+          <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="14" height="12"
+               viewBox="0 0 14 12"
                fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_19415_1334)">
               <path
@@ -262,8 +266,8 @@
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button footer-youtube-icon" href="https://www.youtube.com/user/htmlacademyru">
-          <svg class="youtube-icon" aria-hidden="true" focusable="false" width="16" height="11"
+        <a class="footer-youtube-icon" href="https://www.youtube.com/user/htmlacademyru">
+          <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="16" height="11"
                viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M15.67 1.67c-.1-.32-.27-.61-.51-.84-.25-.24-.56-.41-.9-.5C13.01 0 8 0 8 0 5.9-.02 3.8.08 1.74.32 1.4.4 1.1.58.84.82c-.24.24-.42.53-.51.85A19.4 19.4 0 0 0 0 5.34C0 6.56.1 7.79.33 9c.09.32.27.61.51.85.25.23.56.4.9.5 1.27.32 6.26.32 6.26.32 2.09.02 4.18-.08 6.26-.31.34-.09.65-.26.9-.5.24-.23.42-.52.5-.84.24-1.21.35-2.44.34-3.67.02-1.23-.1-2.46-.33-3.68ZM6.4 7.62V3.05l4.18 2.29L6.4 7.62Z"
@@ -273,8 +277,8 @@
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button footer-twitter-icon" href="https://twitter.com/htmlacademy_ru">
-          <svg class="twitter-icon" aria-hidden="true" focusable="false" width="15" height="15"
+        <a class="footer-twitter-icon" href="https://twitter.com/htmlacademy_ru">
+          <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="15" height="15"
                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.7.16c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4C1 5.26-.2 2.36.8.86c1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z"
