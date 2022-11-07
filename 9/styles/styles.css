@@ -189,8 +189,8 @@ body {
 
 .navigation-login {
   display: block;
-  margin-right: 150px;
-  padding-left: 27px;
+  margin-right: 140px;
+  padding-left: 25px;
   background-image: url("../images/sign-in-icon.svg");
   background-repeat: no-repeat;
   background-size: 13px 12px;
@@ -206,29 +206,30 @@ body {
 }
 
 .navigation-backet {
-  padding-left: 24px;
+  padding-left: 40px;
   background-image: url("../images/backet-icon.svg");
   background-repeat: no-repeat;
-  background-size: 13px 21px;
-  background-position: center left;
+  background-position: 12px 2px;
   z-index: 0;
   position: relative;
 }
 
 .navigation-backet-count {
-  position: relative;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 1;
   border: none;
-  padding: 0;
-  top: 4px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
+  padding: 3px;
+  left: -3px;
+  top: 0;
+  width: 15px;
+  height: 15px;
   background-color: #FFFFFF;
   border-radius: 50%;
-  text-align: center;
-  vertical-align: top;
-  margin: auto;
+  line-height: 17px;
+  font-size: 14px;
 }
 
 .popover-cart {
@@ -247,9 +248,9 @@ body {
   display: block;
 }
 
-.popover-products-list::before {
+.popover-backet-open::before {
   content: "";
-  position: relative;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 14px;
@@ -490,7 +491,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
 }
 
 .subcatalog-item:hover .subcatalog-container,
@@ -562,7 +563,7 @@ body {
 
 .slider {
   margin-top: -160px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -612,6 +613,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-top: -35px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -624,7 +626,7 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin: 10px;
   background-color: #FFFFFF;
   border: 2px solid #000000;
 }
@@ -666,7 +668,7 @@ body {
   margin-left: 300px;
   color: #FFFFFF;
   margin-bottom: -20px;
-  margin-top: 70px;
+  margin-top: 60px;
   height: 100px;
 }
 
@@ -729,7 +731,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 24px;
-  margin-bottom: 140px;
+  margin-bottom: 183px;
 }
 
 .categories-list {
@@ -762,19 +764,19 @@ body {
   display: block;
   text-decoration: none;
   color: #000000;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.02em;
 }
 
 .categories-item-link img {
   background-color: #FFE17F;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 /* Advantages */
 
 .advantages {
   background-color: #F0F0F0;
-  margin-bottom: 70px;
+  margin-bottom: 25px;
 }
 
 .advantages-container {
@@ -1072,7 +1074,7 @@ body {
 }
 
 .contacts-container {
-  margin-bottom: 70px;
+  margin-bottom: 90px;
 }
 
 .contacts-title {
@@ -1175,9 +1177,10 @@ body {
 .newsletter-submit-button {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
+  font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   border: 3px solid #C4C4C4;
   padding: 18px 39px;
   cursor: pointer;
@@ -1797,6 +1800,13 @@ body {
   position: relative;
 }
 
+.product-card-container {
+  display: grid;
+  grid-template-columns: 220px 140px;
+  row-gap: 32px;
+  align-items: baseline;
+}
+
 .product-card:hover .product-card-container {
   opacity: 0.6;
 }
@@ -1824,9 +1834,9 @@ body {
 }
 
 .product-card-link {
-  display: grid;
-  grid-template-columns: 250px 110px;
-  row-gap: 32px;
+  /*display: grid;*/
+  /*grid-template-columns: 250px 110px;*/
+  /*row-gap: 32px;*/
   justify-content: center;
   text-decoration: none;
   margin: 0;
@@ -1848,7 +1858,8 @@ body {
   line-height: 21px;
   color: #444444;
   grid-column: 2;
-  margin-left: auto;
+  text-align: right;
+  width: 140px;
 }
 
 .product-more-link {
