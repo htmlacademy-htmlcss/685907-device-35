@@ -817,10 +817,11 @@ body {
   content: "";
   position: absolute;
   left: 281px;
-  height: 320px;
+  height: 100%;
   width: 7px;
   background-color: #000000;
   order: 0;
+  padding-bottom: 26px;
 }
 
 .advantages-item {
@@ -1178,7 +1179,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .newsletter-input-email {
@@ -1228,6 +1229,7 @@ body {
   background-repeat: no-repeat;
   background-position: center left;
   background-size: 13px 13px;
+  max-width: 260px;
 }
 
 /* Page footer */
@@ -1295,6 +1297,7 @@ body {
   justify-content: space-around;
   align-items: stretch;
   list-style-type: none;
+  text-align: center;
 }
 
 .footer-advantages-link {
