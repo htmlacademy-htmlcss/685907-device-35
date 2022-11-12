@@ -2201,6 +2201,7 @@ body {
 .order-wish-count {
   width: 180px;
   margin-left: auto;
+  margin-bottom: 63px;
 }
 
 .last-form-fields {
@@ -2208,11 +2209,15 @@ body {
 }
 
 .modal-count-wrapper {
+  margin: 0;
+  padding: 0;
   display: flex;
   background-color: #F0F0F0;
 }
 
 .field-count-input {
+  margin:0;
+  padding: 0;
   width: 60px;
   text-align: center;
   border: none;
@@ -2235,6 +2240,7 @@ body {
   border: none;
   z-index: 1;
   cursor: pointer;
+  background-color: #F0F0F0;
 }
 
 .modal-count-plus {
@@ -2268,6 +2274,7 @@ body {
   border: none;
   background-color: transparent;
   z-index: 1;
+  margin-top: -12px;
 }
 
 .modal-order-submit:active::after {
