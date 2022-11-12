@@ -1188,6 +1188,8 @@ body {
 }
 
 .newsletter-input-email {
+  margin: 0;
+  padding: 0;
   background: transparent;
   border: none;
   border-bottom: 3px solid #C4C4C4;
@@ -1196,6 +1198,8 @@ body {
 }
 
 .newsletter-submit-button {
+  margin: 0;
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
