@@ -1121,7 +1121,8 @@ body {
 .contacts-phone {
   color: inherit;
   font-style: normal;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   display: block;
   margin: 0;
   margin-bottom: 30px;
@@ -1584,12 +1585,14 @@ body {
   width: 50px;
   background-color: transparent;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -2222,7 +2225,8 @@ body {
   text-align: center;
   border: none;
   background-color: #F0F0F0;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   font: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -2230,7 +2234,8 @@ body {
 
 .field-count-input::-webkit-outer-spin-button,
 .field-count-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
