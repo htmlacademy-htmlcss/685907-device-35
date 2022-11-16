@@ -5,6 +5,7 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicon.png">
 </head>
 <body>
 <header class="page-header">
@@ -95,13 +96,17 @@
           </div>
         </li>
         <li class="navigation-item">
-          <a href="#advantages" class="navigation-link">Доставка</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#advantages" class="navigation-link">Гарантия</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#contacts" class="navigation-link">Контакты</a>
+          <ul class="navigation-advantages-links">
+            <li class="navigation-item">
+              <a href="#advantages" class="navigation-link">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#advantages" class="navigation-link">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#contacts" class="navigation-link">Контакты</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -247,7 +252,7 @@
           <button type="button" class="advantages-item-link">Гарантия</button>
         </li>
         <li class="advantages-item">
-          <button type="button" class="advantages-item-link">Кредит</button>
+          <button type="button" disabled class="advantages-item-link">Кредит</button>
         </li>
       </ul>
       <ul class="advantages-description-list">
